@@ -1,0 +1,103 @@
+UPOS: 18
+XPOS: 28
+FEATS: 69
+LEMMAS: 7
+DEPREL: 34
+VARIANT: 1
+Parsing with args:
+batch_size: 32
+beta_2: 0.99
+char_dropout: 0
+cle_dim: 256
+clip_gradient: 2.0
+dev: ['datasets/amharic2/am_ud_rand-dev.conllu']
+dropout: 0.5
+epochs: [(40, 0.001), (20, 0.0001)]
+exp: None
+label_smoothing: 0.03
+max_sentence_len: 120
+min_epoch_batches: 300
+model: models
+parse: 1
+parser_deprel_dim: 128
+parser_layers: 1
+predict: False
+predict_input: None
+predict_output: None
+rnn_cell: LSTM
+rnn_cell_dim: 512
+rnn_layers: 2
+rnn_layers_parser: 1
+rnn_layers_tagger: 0
+seed: 42
+single_root: 1
+tag_layers: 1
+tags: ['UPOS', 'XPOS', 'FEATS', 'LEMMAS']
+test: ['datasets/amharic2/am_ud_rand-dev.conllu']
+threads: 4
+train: datasets/amharic2/am_ud-rand-train.conllu
+variant_dim: 128
+we_dim: 512
+wembedding_model: am-roberta
+word_dropout: 0.2
+Dev  epoch 1, lr 0.001, UPOS: 95.55, XPOS: 95.55, UFeats: 91.80, AllTags: 88.83, Lemmas: 100.00, UAS: 91.70, LAS: 78.16, CLAS: 72.60, MLAS: 60.38, BLEX: 72.60
+Dev  epoch 2, lr 0.001, UPOS: 95.55, XPOS: 95.65, UFeats: 92.29, AllTags: 90.02, Lemmas: 100.00, UAS: 92.19, LAS: 80.83, CLAS: 75.83, MLAS: 65.92, BLEX: 75.83
+Dev  epoch 3, lr 0.001, UPOS: 95.26, XPOS: 95.36, UFeats: 92.29, AllTags: 90.02, Lemmas: 100.00, UAS: 92.89, LAS: 81.03, CLAS: 76.24, MLAS: 65.86, BLEX: 76.24
+Dev  epoch 4, lr 0.001, UPOS: 94.96, XPOS: 95.06, UFeats: 92.69, AllTags: 90.12, Lemmas: 100.00, UAS: 93.28, LAS: 79.74, CLAS: 74.31, MLAS: 64.72, BLEX: 74.31
+Dev  epoch 5, lr 0.001, UPOS: 94.96, XPOS: 95.06, UFeats: 92.29, AllTags: 89.82, Lemmas: 100.00, UAS: 92.39, LAS: 79.15, CLAS: 74.04, MLAS: 63.21, BLEX: 74.04
+Dev  epoch 6, lr 0.001, UPOS: 95.16, XPOS: 95.36, UFeats: 92.39, AllTags: 90.02, Lemmas: 100.00, UAS: 92.49, LAS: 80.83, CLAS: 76.30, MLAS: 66.67, BLEX: 76.30
+Dev  epoch 7, lr 0.001, UPOS: 94.57, XPOS: 94.76, UFeats: 92.00, AllTags: 89.53, Lemmas: 100.00, UAS: 92.69, LAS: 80.34, CLAS: 76.10, MLAS: 65.92, BLEX: 76.10
+Dev  epoch 8, lr 0.001, UPOS: 95.06, XPOS: 95.06, UFeats: 92.19, AllTags: 89.92, Lemmas: 100.00, UAS: 92.19, LAS: 80.14, CLAS: 75.75, MLAS: 66.32, BLEX: 75.75
+Dev  epoch 9, lr 0.001, UPOS: 94.86, XPOS: 94.86, UFeats: 92.59, AllTags: 90.22, Lemmas: 100.00, UAS: 91.90, LAS: 79.25, CLAS: 74.36, MLAS: 64.71, BLEX: 74.36
+Dev  epoch 10, lr 0.001, UPOS: 94.76, XPOS: 94.66, UFeats: 92.59, AllTags: 90.12, Lemmas: 100.00, UAS: 92.59, LAS: 80.24, CLAS: 75.23, MLAS: 66.07, BLEX: 75.23
+Dev  epoch 11, lr 0.001, UPOS: 94.96, XPOS: 95.16, UFeats: 92.59, AllTags: 90.12, Lemmas: 100.00, UAS: 93.28, LAS: 80.34, CLAS: 75.24, MLAS: 65.67, BLEX: 75.24
+Dev  epoch 12, lr 0.001, UPOS: 94.66, XPOS: 94.66, UFeats: 92.39, AllTags: 90.02, Lemmas: 100.00, UAS: 91.90, LAS: 79.55, CLAS: 74.72, MLAS: 65.27, BLEX: 74.72
+Dev  epoch 13, lr 0.001, UPOS: 95.26, XPOS: 95.16, UFeats: 92.98, AllTags: 90.61, Lemmas: 100.00, UAS: 92.49, LAS: 80.24, CLAS: 75.23, MLAS: 66.07, BLEX: 75.23
+Dev  epoch 14, lr 0.001, UPOS: 94.66, XPOS: 94.76, UFeats: 92.09, AllTags: 89.92, Lemmas: 100.00, UAS: 92.89, LAS: 79.84, CLAS: 74.94, MLAS: 65.22, BLEX: 74.94
+Dev  epoch 15, lr 0.001, UPOS: 95.16, XPOS: 95.26, UFeats: 93.08, AllTags: 90.81, Lemmas: 100.00, UAS: 92.79, LAS: 80.24, CLAS: 75.66, MLAS: 66.22, BLEX: 75.66
+Dev  epoch 16, lr 0.001, UPOS: 94.86, XPOS: 94.86, UFeats: 92.39, AllTags: 89.82, Lemmas: 100.00, UAS: 92.79, LAS: 80.24, CLAS: 75.23, MLAS: 65.47, BLEX: 75.23
+Dev  epoch 17, lr 0.001, UPOS: 95.16, XPOS: 95.36, UFeats: 92.69, AllTags: 90.51, Lemmas: 100.00, UAS: 92.59, LAS: 80.24, CLAS: 74.92, MLAS: 65.77, BLEX: 74.92
+Dev  epoch 18, lr 0.001, UPOS: 95.36, XPOS: 95.65, UFeats: 92.79, AllTags: 90.51, Lemmas: 100.00, UAS: 92.79, LAS: 80.04, CLAS: 74.83, MLAS: 65.36, BLEX: 74.83
+Dev  epoch 19, lr 0.001, UPOS: 95.16, XPOS: 95.16, UFeats: 92.59, AllTags: 90.22, Lemmas: 100.00, UAS: 92.79, LAS: 79.84, CLAS: 75.02, MLAS: 66.02, BLEX: 75.02
+Dev  epoch 20, lr 0.001, UPOS: 94.96, XPOS: 94.96, UFeats: 92.79, AllTags: 90.12, Lemmas: 100.00, UAS: 92.79, LAS: 79.84, CLAS: 74.93, MLAS: 65.37, BLEX: 74.93
+Dev  epoch 21, lr 0.001, UPOS: 95.16, XPOS: 95.16, UFeats: 92.49, AllTags: 90.22, Lemmas: 100.00, UAS: 92.19, LAS: 79.64, CLAS: 74.87, MLAS: 65.12, BLEX: 74.87
+Dev  epoch 22, lr 0.001, UPOS: 94.96, XPOS: 95.26, UFeats: 92.19, AllTags: 89.82, Lemmas: 100.00, UAS: 92.09, LAS: 79.45, CLAS: 74.47, MLAS: 64.41, BLEX: 74.47
+Dev  epoch 23, lr 0.001, UPOS: 94.96, XPOS: 95.36, UFeats: 92.69, AllTags: 90.32, Lemmas: 100.00, UAS: 92.69, LAS: 80.14, CLAS: 75.06, MLAS: 65.47, BLEX: 75.06
+Dev  epoch 24, lr 0.001, UPOS: 95.16, XPOS: 95.36, UFeats: 92.69, AllTags: 90.12, Lemmas: 100.00, UAS: 92.79, LAS: 80.24, CLAS: 75.32, MLAS: 65.42, BLEX: 75.32
+Dev  epoch 25, lr 0.001, UPOS: 94.86, XPOS: 95.16, UFeats: 92.59, AllTags: 89.92, Lemmas: 100.00, UAS: 92.49, LAS: 79.25, CLAS: 74.46, MLAS: 64.72, BLEX: 74.46
+Dev  epoch 26, lr 0.001, UPOS: 95.16, XPOS: 95.06, UFeats: 92.49, AllTags: 90.02, Lemmas: 100.00, UAS: 93.08, LAS: 80.53, CLAS: 76.05, MLAS: 66.17, BLEX: 76.05
+Dev  epoch 27, lr 0.001, UPOS: 95.45, XPOS: 95.55, UFeats: 93.38, AllTags: 91.21, Lemmas: 100.00, UAS: 92.79, LAS: 79.64, CLAS: 74.19, MLAS: 66.06, BLEX: 74.19
+Dev  epoch 28, lr 0.001, UPOS: 95.16, XPOS: 95.26, UFeats: 92.79, AllTags: 90.61, Lemmas: 100.00, UAS: 92.59, LAS: 80.04, CLAS: 75.26, MLAS: 65.97, BLEX: 75.26
+Dev  epoch 29, lr 0.001, UPOS: 95.36, XPOS: 95.45, UFeats: 93.28, AllTags: 90.81, Lemmas: 100.00, UAS: 92.89, LAS: 80.73, CLAS: 76.05, MLAS: 66.62, BLEX: 76.05
+Dev  epoch 30, lr 0.001, UPOS: 95.36, XPOS: 95.55, UFeats: 93.38, AllTags: 90.71, Lemmas: 100.00, UAS: 92.19, LAS: 80.14, CLAS: 75.04, MLAS: 66.02, BLEX: 75.04
+Dev  epoch 31, lr 0.001, UPOS: 95.55, XPOS: 95.75, UFeats: 93.28, AllTags: 91.21, Lemmas: 100.00, UAS: 93.58, LAS: 81.52, CLAS: 76.80, MLAS: 67.51, BLEX: 76.80
+Dev  epoch 32, lr 0.001, UPOS: 95.06, XPOS: 95.16, UFeats: 92.49, AllTags: 90.22, Lemmas: 100.00, UAS: 93.18, LAS: 80.43, CLAS: 75.53, MLAS: 66.22, BLEX: 75.53
+Dev  epoch 33, lr 0.001, UPOS: 94.86, XPOS: 95.16, UFeats: 93.48, AllTags: 90.61, Lemmas: 100.00, UAS: 93.28, LAS: 80.83, CLAS: 75.85, MLAS: 67.12, BLEX: 75.85
+Dev  epoch 34, lr 0.001, UPOS: 95.36, XPOS: 95.55, UFeats: 93.38, AllTags: 91.11, Lemmas: 100.00, UAS: 93.18, LAS: 80.24, CLAS: 74.89, MLAS: 66.77, BLEX: 74.89
+Dev  epoch 35, lr 0.001, UPOS: 95.36, XPOS: 95.26, UFeats: 93.18, AllTags: 90.61, Lemmas: 100.00, UAS: 93.18, LAS: 80.34, CLAS: 75.19, MLAS: 66.17, BLEX: 75.19
+Dev  epoch 36, lr 0.001, UPOS: 95.06, XPOS: 95.55, UFeats: 93.38, AllTags: 90.51, Lemmas: 100.00, UAS: 92.69, LAS: 80.04, CLAS: 75.38, MLAS: 66.22, BLEX: 75.38
+Dev  epoch 37, lr 0.001, UPOS: 95.26, XPOS: 95.45, UFeats: 93.48, AllTags: 91.01, Lemmas: 100.00, UAS: 93.58, LAS: 80.83, CLAS: 75.88, MLAS: 67.17, BLEX: 75.88
+Dev  epoch 38, lr 0.001, UPOS: 95.45, XPOS: 95.45, UFeats: 93.28, AllTags: 90.91, Lemmas: 100.00, UAS: 93.28, LAS: 80.63, CLAS: 75.88, MLAS: 67.02, BLEX: 75.88
+Dev  epoch 39, lr 0.001, UPOS: 95.45, XPOS: 95.55, UFeats: 93.28, AllTags: 90.91, Lemmas: 100.00, UAS: 92.98, LAS: 81.32, CLAS: 77.12, MLAS: 68.57, BLEX: 77.12
+Dev  epoch 40, lr 0.001, UPOS: 95.26, XPOS: 95.36, UFeats: 93.68, AllTags: 91.01, Lemmas: 100.00, UAS: 92.29, LAS: 80.83, CLAS: 76.63, MLAS: 67.62, BLEX: 76.63
+Dev  epoch 1, lr 0.0001, UPOS: 95.65, XPOS: 95.75, UFeats: 93.58, AllTags: 91.21, Lemmas: 100.00, UAS: 92.19, LAS: 80.83, CLAS: 76.31, MLAS: 67.92, BLEX: 76.31
+Dev  epoch 2, lr 0.0001, UPOS: 95.65, XPOS: 95.85, UFeats: 93.48, AllTags: 91.21, Lemmas: 100.00, UAS: 92.49, LAS: 80.93, CLAS: 76.46, MLAS: 68.07, BLEX: 76.46
+Dev  epoch 3, lr 0.0001, UPOS: 95.65, XPOS: 95.95, UFeats: 93.48, AllTags: 91.21, Lemmas: 100.00, UAS: 92.39, LAS: 80.24, CLAS: 75.81, MLAS: 67.12, BLEX: 75.81
+Dev  epoch 4, lr 0.0001, UPOS: 95.75, XPOS: 95.95, UFeats: 93.38, AllTags: 91.11, Lemmas: 100.00, UAS: 92.49, LAS: 80.83, CLAS: 76.28, MLAS: 67.87, BLEX: 76.28
+Dev  epoch 5, lr 0.0001, UPOS: 95.75, XPOS: 95.95, UFeats: 93.58, AllTags: 91.30, Lemmas: 100.00, UAS: 92.98, LAS: 81.13, CLAS: 76.58, MLAS: 68.32, BLEX: 76.58
+Dev  epoch 6, lr 0.0001, UPOS: 95.65, XPOS: 95.75, UFeats: 93.58, AllTags: 91.30, Lemmas: 100.00, UAS: 92.79, LAS: 80.93, CLAS: 76.28, MLAS: 68.17, BLEX: 76.28
+Dev  epoch 7, lr 0.0001, UPOS: 95.65, XPOS: 95.75, UFeats: 93.48, AllTags: 91.21, Lemmas: 100.00, UAS: 92.69, LAS: 80.83, CLAS: 76.13, MLAS: 68.02, BLEX: 76.13
+Dev  epoch 8, lr 0.0001, UPOS: 95.65, XPOS: 95.75, UFeats: 93.38, AllTags: 91.21, Lemmas: 100.00, UAS: 92.98, LAS: 81.03, CLAS: 76.28, MLAS: 68.02, BLEX: 76.28
+Dev  epoch 9, lr 0.0001, UPOS: 95.45, XPOS: 95.65, UFeats: 93.38, AllTags: 91.11, Lemmas: 100.00, UAS: 92.98, LAS: 80.73, CLAS: 76.01, MLAS: 67.62, BLEX: 76.01
+Dev  epoch 10, lr 0.0001, UPOS: 95.55, XPOS: 95.65, UFeats: 93.28, AllTags: 91.11, Lemmas: 100.00, UAS: 92.89, LAS: 81.42, CLAS: 76.88, MLAS: 68.32, BLEX: 76.88
+Dev  epoch 11, lr 0.0001, UPOS: 95.55, XPOS: 95.55, UFeats: 93.38, AllTags: 91.11, Lemmas: 100.00, UAS: 92.98, LAS: 81.32, CLAS: 76.58, MLAS: 68.17, BLEX: 76.58
+Dev  epoch 12, lr 0.0001, UPOS: 95.55, XPOS: 95.65, UFeats: 93.38, AllTags: 91.21, Lemmas: 100.00, UAS: 93.18, LAS: 81.62, CLAS: 76.97, MLAS: 68.42, BLEX: 76.97
+Dev  epoch 13, lr 0.0001, UPOS: 95.45, XPOS: 95.85, UFeats: 93.28, AllTags: 91.01, Lemmas: 100.00, UAS: 93.28, LAS: 81.72, CLAS: 77.03, MLAS: 68.17, BLEX: 77.03
+Dev  epoch 14, lr 0.0001, UPOS: 95.45, XPOS: 95.55, UFeats: 93.28, AllTags: 90.91, Lemmas: 100.00, UAS: 93.38, LAS: 81.42, CLAS: 76.76, MLAS: 67.62, BLEX: 76.76
+Dev  epoch 15, lr 0.0001, UPOS: 95.55, XPOS: 95.65, UFeats: 93.28, AllTags: 91.01, Lemmas: 100.00, UAS: 93.48, LAS: 81.42, CLAS: 76.73, MLAS: 67.57, BLEX: 76.73
+Dev  epoch 16, lr 0.0001, UPOS: 95.45, XPOS: 95.55, UFeats: 93.28, AllTags: 90.91, Lemmas: 100.00, UAS: 93.48, LAS: 81.13, CLAS: 76.22, MLAS: 67.22, BLEX: 76.22
+Dev  epoch 17, lr 0.0001, UPOS: 95.55, XPOS: 95.65, UFeats: 93.28, AllTags: 91.01, Lemmas: 100.00, UAS: 92.98, LAS: 80.83, CLAS: 76.07, MLAS: 67.37, BLEX: 76.07
+Dev  epoch 18, lr 0.0001, UPOS: 95.55, XPOS: 95.55, UFeats: 93.28, AllTags: 90.91, Lemmas: 100.00, UAS: 93.18, LAS: 81.23, CLAS: 76.52, MLAS: 68.12, BLEX: 76.52
+Dev  epoch 19, lr 0.0001, UPOS: 95.55, XPOS: 95.55, UFeats: 93.28, AllTags: 90.81, Lemmas: 100.00, UAS: 93.18, LAS: 80.73, CLAS: 75.68, MLAS: 66.82, BLEX: 75.68
+Dev  epoch 20, lr 0.0001, UPOS: 95.36, XPOS: 95.65, UFeats: 93.28, AllTags: 90.91, Lemmas: 100.00, UAS: 93.48, LAS: 81.52, CLAS: 76.82, MLAS: 67.67, BLEX: 76.82
+Test  epoch 20, lr 0.0001, UPOS: 95.36, XPOS: 95.65, UFeats: 93.28, AllTags: 90.91, Lemmas: 100.00, UAS: 93.48, LAS: 81.52, CLAS: 76.82, MLAS: 67.67, BLEX: 76.82
