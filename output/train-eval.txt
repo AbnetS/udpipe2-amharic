@@ -1,0 +1,37 @@
+Evaluation of parser on the training data (comparison between am_ud-rand-train.conllu and prediction-out-train.conllu)
+
+$ env/scripts/python udpipe2_eval.py datasets/amharic/am_ud-rand-train.conllu output/prediction-out-train.conllu --verbose
+(in percentage)
+Metric     | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |    100.00 |    100.00 |    100.00 |    100.00
+XPOS       |    100.00 |    100.00 |    100.00 |    100.00
+UFeats     |    100.00 |    100.00 |    100.00 |    100.00
+AllTags    |    100.00 |    100.00 |    100.00 |    100.00
+Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+UAS        |    100.00 |    100.00 |    100.00 |    100.00
+LAS        |     99.94 |     99.94 |     99.94 |     99.94
+CLAS       |     99.91 |     99.91 |     99.91 |     99.91
+MLAS       |     99.91 |     99.91 |     99.91 |     99.91
+BLEX       |     99.91 |     99.91 |     99.91 |     99.91
+
+$ env/scripts/python udpipe2_eval.py datasets/amharic/am_ud-rand-train.conllu output/prediction-out-train.conllu --verbose --c
+(in actual numbers)
+Metric     | Correct   |      Gold | Predicted | Aligned
+-----------+-----------+-----------+-----------+-----------
+Tokens     |      4727 |      4727 |      4727 |
+Sentences  |       965 |       965 |       965 |
+Words      |      9024 |      9024 |      9024 |      9024
+UPOS       |      9024 |      9024 |      9024 |      9024
+XPOS       |      9024 |      9024 |      9024 |      9024
+UFeats     |      9024 |      9024 |      9024 |      9024
+AllTags    |      9024 |      9024 |      9024 |      9024
+Lemmas     |      9024 |      9024 |      9024 |      9024
+UAS        |      9024 |      9024 |      9024 |      9024
+LAS        |      9019 |      9024 |      9024 |      9024
+CLAS       |      5828 |      5833 |      5833 |      5833
+MLAS       |      5828 |      5833 |      5833 |      5833
+BLEX       |      5828 |      5833 |      5833 |      5833

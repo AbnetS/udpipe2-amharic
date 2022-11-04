@@ -1,0 +1,37 @@
+Evaluation of parser on the dev data (comparison between am_ud_rand-dev.conllu and prediction-out-dev.conllu)
+
+$ env/scripts/python udpipe2_eval.py datasets/amharic/am_ud_rand-dev.conllu output/prediction-out-dev.conllu --verbose
+(in percentage)
+Metric     | Precision |    Recall |  F1 Score | AligndAcc
+-----------+-----------+-----------+-----------+-----------
+Tokens     |    100.00 |    100.00 |    100.00 |
+Sentences  |    100.00 |    100.00 |    100.00 |
+Words      |    100.00 |    100.00 |    100.00 |
+UPOS       |     95.36 |     95.36 |     95.36 |     95.36
+XPOS       |     95.65 |     95.65 |     95.65 |     95.65
+UFeats     |     93.28 |     93.28 |     93.28 |     93.28
+AllTags    |     90.91 |     90.91 |     90.91 |     90.91
+Lemmas     |    100.00 |    100.00 |    100.00 |    100.00
+UAS        |     93.48 |     93.48 |     93.48 |     93.48
+LAS        |     81.52 |     81.52 |     81.52 |     81.52
+CLAS       |     76.65 |     76.99 |     76.82 |     76.99
+MLAS       |     67.51 |     67.82 |     67.67 |     67.82
+BLEX       |     76.65 |     76.99 |     76.82 |     76.99
+
+$ env/scripts/python udpipe2_eval.py datasets/amharic/am_ud_rand-dev.conllu output/prediction-out-dev.conllu --verbose -c
+(in actual numbers)
+Metric     | Correct   |      Gold | Predicted | Aligned
+-----------+-----------+-----------+-----------+-----------
+Tokens     |       515 |       515 |       515 |
+Sentences  |       110 |       110 |       110 |
+Words      |      1012 |      1012 |      1012 |      1012
+UPOS       |       965 |      1012 |      1012 |      1012
+XPOS       |       968 |      1012 |      1012 |      1012
+UFeats     |       944 |      1012 |      1012 |      1012
+AllTags    |       920 |      1012 |      1012 |      1012
+Lemmas     |      1012 |      1012 |      1012 |      1012
+UAS        |       946 |      1012 |      1012 |      1012
+LAS        |       825 |      1012 |      1012 |      1012
+CLAS       |       512 |       665 |       668 |       665
+MLAS       |       451 |       665 |       668 |       665
+BLEX       |       512 |       665 |       668 |       665
