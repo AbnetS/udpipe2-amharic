@@ -1,0 +1,22 @@
+# sent_id = data_UD-third_apple_2-x17-s1
+# text = የምትሄድ ከሆነ ይህን መጽሐፍ መልስልኝ ።
+1	የምትሄድ	_	_	_	_	_	_	_	_
+2	ከሆነ	_	_	_	_	_	_	_	_
+3	ይህን	_	_	_	_	_	_	_	_
+4	መጽሐፍ	መጽሐፍ	NOUN	NOUN	Number=Sing	11	obj	_	_
+5	መልስልኝ	_	_	_	_	_	_	_	_
+6	።	።	PUNCT	PUNCT	_	11	punct	_	_
+
+# sent_id = data_UD-x19-s9
+# text = ውሸታቸውን ነው ።
+1	ውሸታቸውን	_	_	_	_	_	_	_	_
+2	ነው	_	_	_	_	_	_	_	_
+3	።	።	PUNCT	PUNCT	_	1	punct	_	_
+
+# sent_id = data_UD-third_apple_2-x13-s10
+# text = አስተማሪው ለተማሪዎች ስጦታ ሰጣቸው ።
+1	አስተማሪው	_	_	_	_	_	_	_	_
+2	ለተማሪዎች	_	_	_	_	_	_	_	_
+3	ስጦታ	ስጦታ	NOUN	NOUN	Number=Sing	6	obj	_	_
+4	ሰጣቸው	_	_	_	_	_	_	_	_
+5	።	።	PUNCT	PUNCT	_	6	punct	_	_

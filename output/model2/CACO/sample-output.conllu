@@ -1,0 +1,41 @@
+# text = ደብዳቤውን ካነበብክ በኋላ " ጓደኛዬ እኮ እንዲህ አለኝ ! " ብለህ በደስታ ለሌሎች ትናገር ይሆናል ።
+# sent_id = CACO2.1_B1.0_s2
+1-3	ደብዳቤውን	_	_	_	_	_	_	_	_
+1	ደብዳቤ	ደብዳቤ	NOUN	NOUN	Number=Sing	5	obj	_	_
+2	ኡ	ኡ	DET	DET	_	1	det	_	_
+3	ን	ን	PART	ACC	_	1	case	_	_
+4-6	ካነበብክ	_	_	_	_	_	_	_	_
+4	ከ	ከ	ADP	ADP	_	5	case	_	_
+5	አነበብ	አነበብ	VERB	VERB	Aspect=Perf	17	advcl	_	_
+6	ህ	ህ	PRON	SUBJC	Gender=Masc|Number=Sing|Person=2	5	nsubj	_	_
+7-8	በኋላ	_	_	_	_	_	_	_	_
+7	በ	በ	ADP	ADP	_	5	case	_	_
+8	ኋላ	ኋላ	ADJ	ADJ	_	5	obl	_	_
+9-10	ጓደኛዬ	_	_	_	_	_	_	_	_
+9	ጓደኛ	ጓደኛ	NOUN	NOUN	Number=Sing	24	nsubj	_	_
+10	ኤ	ኤ	PRON	POSM	Number=Sing|Person=1|Poss=Yes	9	nmod	_	_
+11	እኮ	እኮ	INTJ	INTJ	_	13	discourse	_	_
+12	ይህ	ይህ	DET	DET	_	13	det	_	_
+13-14	አለኝ	_	_	_	_	_	_	_	_
+13	አል	አል	VERB	VERB	Aspect=Perf	17	ccomp	_	_
+14	ኧ	ኧ	PRON	SUBJC	Gender=Masc|Number=Sing|Person=3	13	expl	_	_
+15	ኝ	ኝ	PRON	OBJC	Number=Sing|Person=1	5	expl	_	_
+16	!	!	PUNCT	PUNCT	_	13	punct	_	_
+17-18	ብለህ	_	_	_	_	_	_	_	_
+17	ብል	ብል	VERB	VERB	VerbForm=Conv	24	advcl	_	_
+18	ኧህ	ኧህ	PRON	SUBCC	Gender=Masc|Number=Sing|Person=2	17	nsubj	_	_
+19-20	በደስታ	_	_	_	_	_	_	_	_
+19	በ	በ	ADP	ADP	_	20	case	_	_
+20	ደስታ	ደስታ	NOUN	NOUN	Number=Sing	24	obl	_	_
+21-22	ለሌሎች	_	_	_	_	_	_	_	_
+21	ለ	ለ	ADP	ADP	_	22	case	_	_
+22	ሌሎች	ሌሎች	NOUN	NOUN	Number=Sing	24	obl	_	_
+23-24	ትናገር	_	_	_	_	_	_	_	_
+23	ት	ት	PRON	SUBJC	Gender=Fem|Number=Sing|Person=3	24	expl	_	_
+24	ናገር	ናገር	VERB	VERB	Aspect=Imp	0	root	_	_
+25-27	ይሆናል	_	_	_	_	_	_	_	_
+25	ይ	ይ	PRON	SUBJC	Gender=Masc|Number=Sing|Person=3	24	expl	_	_
+26	ሆን	ሆን	AUX	AUX	_	24	aux	_	_
+27	ኣል	ኣል	AUX	AUX	Tense=Pres	24	aux	_	_
+28	።	።	PUNCT	PUNCT	_	24	punct	_	_
+
